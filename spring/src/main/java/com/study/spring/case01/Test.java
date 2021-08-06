@@ -6,15 +6,15 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
 
 	public static void main(String[] args) {
-		//OLD
-		Person person = new Person();		
+		// OLD
+		Person person = new Person();
 		person.setId(1);
-		person.setName("Spring");		
+		person.setName("Spring");
 		System.out.println(person);
-		//Spring		
+		// Spring
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-		Person person2 = (Person)ctx.getBean("person");
-System.out.println(person2);
+		Person person2 = (Person) ctx.getBean("person");
+		System.out.println(person2);
 	}
 
 }
