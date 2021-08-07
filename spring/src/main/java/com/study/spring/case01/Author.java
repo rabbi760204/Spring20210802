@@ -9,7 +9,7 @@ public class Author {
 	public Author() {
 		super();
 	}
-	public Author(String name, String sex, Integer age) {
+	public Author(String sex, String name, Integer age) {
 		super();
 		this.name = name;
 		this.sex = sex;
