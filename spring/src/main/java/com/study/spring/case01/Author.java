@@ -2,18 +2,29 @@ package com.study.spring.case01;
 
 public class Author {
 	private String name;
-	private Character sex; 
+	private String sex; 
 	private Integer age;
+		
+	
+	public Author() {
+		super();
+	}
+	public Author(String name, String sex, Integer age) {
+		super();
+		this.name = name;
+		this.sex = sex;
+		this.age = age;
+	}
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Character getSex() {
+	public String getSex() {
 		return sex;
 	}
-	public void setSex(Character sex) {
+	public void setSex(String sex) {
 		this.sex = sex;
 	}
 	public Integer getAge() {
